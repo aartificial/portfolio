@@ -1,0 +1,52 @@
+@import 'variables.module';
+
+.main {
+  position: fixed;
+  z-index: 10;
+  left: calc(max(20px, 4vmin)*2);
+  top: calc(max(20px, 4vmin)*2);
+  mix-blend-mode: difference;
+}
+
+.title {
+  margin: -0.1em em 0 0 -0.04em;
+  font-weight: 200;
+  font-size: 30px;
+}
+
+@media (min-width: 1280px) {
+  .title {
+    font-size: 60px;
+  }
+}
+
+.label {
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+.nav {
+  margin-top: 50px;
+}
+
+.nav > ol {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.nav > ol li {
+  position: relative;
+}
+
+.nav > li {
+  pointer-events: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+li {
+  cursor: pointer;
+}

@@ -1,0 +1,24 @@
+@import "themes.css";
+@import "variables.module";
+
+.main {
+    position: fixed;
+    z-index: 10;
+    left: calc(max(20px, 4vmin) - 0.15em);
+    bottom: $pad;
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    mix-blend-mode: difference;
+    display: flex;
+    column-gap: 15px;
+    cursor: pointer;
+}
+
+.selector {
+    display: flex;
+    column-gap: 3px;
+    font-weight: 400;
+    text-transform: uppercase;
+    pointer-events: none;
+}
